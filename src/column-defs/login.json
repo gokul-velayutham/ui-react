@@ -1,0 +1,31 @@
+{
+  "forms": {
+    "schema": {
+      "required": [
+        "phone",
+        "email"
+      ],
+      "properties": {
+        "phone": {
+          "type": "number",
+          "maximum": 100,
+          "minimum": 0
+        },
+        "email": {
+          "type": "string",
+          "email": true
+        }
+      },
+      "errorMessage": {
+        "required": {
+          "phone": "phone is required",
+          "email": "email is required"
+        },
+        "properties": {
+          "phone": "Invalid Number exceed 100",
+          "email": "Invalid E-Mail Address"
+        }
+      }
+    }
+  }
+}
